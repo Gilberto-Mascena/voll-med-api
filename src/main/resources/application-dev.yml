@@ -1,0 +1,13 @@
+#DATABASE
+spring:
+  datasource:
+    driver-class-name :
+    url :
+    username :
+    password :
+
+  #JPA
+  jpa:
+    properties.hibernate.format_sql : true
+#    hibernate.ddl-auto : update
+    show-sql : true
