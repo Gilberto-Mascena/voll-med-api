@@ -1,6 +1,6 @@
 package br.com.mascenadev.vollmed.controller;
 
-import br.com.mascenadev.vollmed.dto.ListPatients;
+import br.com.mascenadev.vollmed.dto.ListPatientsDTO;
 import br.com.mascenadev.vollmed.dto.RegisterPatientDTO;
 import br.com.mascenadev.vollmed.dto.UpdatePatientDTO;
 import br.com.mascenadev.vollmed.entities.Patient;
@@ -27,8 +27,8 @@ public class PatientController {
     }
 
     @GetMapping
-    public Page<ListPatients> listPatients(@PageableDefault(size = 10, sort = {"nome"}) Pageable pageable) {
-        return patientRepository.findAllByAtivoTrue(pageable).map(ListPatients::new);
+    public Page<ListPatientsDTO> listPatients(@PageableDefault(size = 10, sort = {"nome"}) Pageable pageable) {
+        return patientRepository.findAllByAtivoTrue(pageable).map(ListPatientsDTO::new);
     }
 
     @PutMapping

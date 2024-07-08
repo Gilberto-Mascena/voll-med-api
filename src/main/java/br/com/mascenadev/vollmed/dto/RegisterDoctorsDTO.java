@@ -1,6 +1,5 @@
 package br.com.mascenadev.vollmed.dto;
 
-import br.com.mascenadev.vollmed.address.DataAddress;
 import br.com.mascenadev.vollmed.entities.enums.Specialties;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
@@ -28,5 +27,5 @@ public record RegisterDoctorsDTO(
 
         @NotNull
         @Valid
-        DataAddress endereco) {
+        DataAddressDTO endereco) {
 }

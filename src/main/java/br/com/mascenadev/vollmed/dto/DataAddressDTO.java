@@ -1,9 +1,9 @@
-package br.com.mascenadev.vollmed.address;
+package br.com.mascenadev.vollmed.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 
-public record DataAddress(
+public record DataAddressDTO(
         @NotBlank
         String logradouro,
 

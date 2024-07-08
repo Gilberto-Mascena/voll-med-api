@@ -1,6 +1,5 @@
 package br.com.mascenadev.vollmed.dto;
 
-import br.com.mascenadev.vollmed.address.DataAddress;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -20,5 +19,5 @@ public record RegisterPatientDTO(
         @Pattern(regexp = "\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}")
         String cpf,
 
-        @NotNull @Valid DataAddress endereco) {
+        @NotNull @Valid DataAddressDTO endereco) {
 }

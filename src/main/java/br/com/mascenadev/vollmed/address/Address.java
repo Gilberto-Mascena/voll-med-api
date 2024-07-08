@@ -1,5 +1,6 @@
 package br.com.mascenadev.vollmed.address;
 
+import br.com.mascenadev.vollmed.dto.DataAddressDTO;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,7 +20,7 @@ public class Address {
     private String cidade;
     private String uf;
 
-    public Address(DataAddress data) {
+    public Address(DataAddressDTO data) {
         this.logradouro = data.logradouro();
         this.bairro = data.bairro();
         this.cep = data.cep();
@@ -29,7 +30,7 @@ public class Address {
         this.uf = data.uf();
     }
 
-    public void updateAddress(DataAddress data) {
+    public void updateAddress(DataAddressDTO data) {
         if (data.logradouro() != null) {
             this.logradouro = data.logradouro();
         }
