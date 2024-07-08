@@ -1,0 +1,15 @@
+nome :
+  obrigatorio : Nome é obrigatório
+email :
+  obrigatorio : Email é obrigatório
+  invalido : Formato do email é inválido
+telefone:
+  obrigatorio : Telefone é obrigatório
+crm :
+  obrigatorio : CRM é obrigatório
+  invalido : Formato do CRM é inválido
+especialidade :
+  obrigatoria : Especialidade é obrigatória
+endereco :
+  obrigatorio : Dados do endereço são obrigatórios
+  invalido : Formato do endereço é inválido
