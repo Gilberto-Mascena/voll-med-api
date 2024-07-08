@@ -1,4 +1,4 @@
-package br.com.mascenadev.vollmed.address;
+package br.com.mascenadev.vollmed.entities;
 
 import br.com.mascenadev.vollmed.dto.DataAddressDTO;
 import jakarta.persistence.Embeddable;

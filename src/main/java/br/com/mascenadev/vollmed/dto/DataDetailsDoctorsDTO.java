@@ -1,6 +1,6 @@
 package br.com.mascenadev.vollmed.dto;
 
-import br.com.mascenadev.vollmed.address.Address;
+import br.com.mascenadev.vollmed.entities.Address;
 import br.com.mascenadev.vollmed.entities.Doctor;
 import br.com.mascenadev.vollmed.entities.enums.Specialties;
 
