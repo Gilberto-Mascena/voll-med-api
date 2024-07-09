@@ -1,5 +1,6 @@
 package br.com.mascenadev.vollmed.controller;
 
+import br.com.mascenadev.vollmed.dto.DataTokenDTO;
 import br.com.mascenadev.vollmed.dto.LoginDTO;
 import br.com.mascenadev.vollmed.entities.User;
 import br.com.mascenadev.vollmed.service.TokenService;
@@ -26,8 +27,9 @@ public class AuthenticationController {
     @PostMapping
     public ResponseEntity login(@RequestBody @Valid LoginDTO data) {
 
-        var token = new UsernamePasswordAuthenticationToken(data.login(), data.senha());
-        var authentication = authenticationManager.authenticate(token);
-        return ResponseEntity.ok(tokenService.generateToken((User)authentication.getPrincipal()));
+        var AuthenticationToken = new UsernamePasswordAuthenticationToken(data.login(), data.senha());
+        var authentication = authenticationManager.authenticate(AuthenticationToken);
+        var tokenJWT = tokenService.generateToken((User)authentication.getPrincipal());
+        return ResponseEntity.ok(new DataTokenDTO(tokenJWT));
     }
 }

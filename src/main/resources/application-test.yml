@@ -16,3 +16,7 @@ spring:
 server:
   error:
     include-stacktrace : never
+api:
+  security:
+    token:
+      secret: ${API_SECURITY_TOKEN_SECRET}
