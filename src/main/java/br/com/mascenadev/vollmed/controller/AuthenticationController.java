@@ -29,7 +29,7 @@ public class AuthenticationController {
 
         var AuthenticationToken = new UsernamePasswordAuthenticationToken(data.login(), data.senha());
         var authentication = authenticationManager.authenticate(AuthenticationToken);
-        var tokenJWT = tokenService.generateToken((User)authentication.getPrincipal());
+        var tokenJWT = tokenService.generateToken((User) authentication.getPrincipal());
         return ResponseEntity.ok(new DataTokenDTO(tokenJWT));
     }
 }
