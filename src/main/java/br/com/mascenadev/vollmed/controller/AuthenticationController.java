@@ -1,6 +1,8 @@
 package br.com.mascenadev.vollmed.controller;
 
 import br.com.mascenadev.vollmed.dto.LoginDTO;
+import br.com.mascenadev.vollmed.entities.User;
+import br.com.mascenadev.vollmed.service.TokenService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
@@ -18,11 +20,14 @@ public class AuthenticationController {
     @Resource
     private AuthenticationManager authenticationManager;
 
+    @Resource
+    private TokenService tokenService;
+
     @PostMapping
     public ResponseEntity login(@RequestBody @Valid LoginDTO data) {
 
         var token = new UsernamePasswordAuthenticationToken(data.login(), data.senha());
         var authentication = authenticationManager.authenticate(token);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(tokenService.generateToken((User)authentication.getPrincipal()));
     }
 }
