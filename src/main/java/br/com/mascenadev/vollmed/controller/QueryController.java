@@ -1,7 +1,7 @@
 package br.com.mascenadev.vollmed.controller;
 
-import br.com.mascenadev.vollmed.dto.DetailingConsultationDTO;
-import br.com.mascenadev.vollmed.dto.SchedulingConsultationDTO;
+import br.com.mascenadev.vollmed.dto.query.DetailingConsultationDTO;
+import br.com.mascenadev.vollmed.dto.query.SchedulingConsultationDTO;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,7 +1,7 @@
 package br.com.mascenadev.vollmed.controller;
 
-import br.com.mascenadev.vollmed.dto.DataTokenDTO;
-import br.com.mascenadev.vollmed.dto.LoginDTO;
+import br.com.mascenadev.vollmed.dto.token.DataTokenDTO;
+import br.com.mascenadev.vollmed.dto.login.LoginDTO;
 import br.com.mascenadev.vollmed.entities.User;
 import br.com.mascenadev.vollmed.service.TokenService;
 import jakarta.annotation.Resource;

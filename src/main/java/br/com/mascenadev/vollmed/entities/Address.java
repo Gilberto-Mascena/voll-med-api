@@ -1,6 +1,6 @@
 package br.com.mascenadev.vollmed.entities;
 
-import br.com.mascenadev.vollmed.dto.DataAddressDTO;
+import br.com.mascenadev.vollmed.dto.address.DataAddressDTO;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

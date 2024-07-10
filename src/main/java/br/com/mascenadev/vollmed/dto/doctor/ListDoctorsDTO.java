@@ -1,4 +1,4 @@
-package br.com.mascenadev.vollmed.dto;
+package br.com.mascenadev.vollmed.dto.doctor;
 
 import br.com.mascenadev.vollmed.entities.Doctor;
 import br.com.mascenadev.vollmed.entities.enums.Specialties;

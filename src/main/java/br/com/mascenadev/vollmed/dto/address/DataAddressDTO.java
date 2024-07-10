@@ -1,4 +1,4 @@
-package br.com.mascenadev.vollmed.dto;
+package br.com.mascenadev.vollmed.dto.address;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

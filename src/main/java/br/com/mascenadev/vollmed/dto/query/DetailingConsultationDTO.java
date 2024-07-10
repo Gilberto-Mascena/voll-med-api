@@ -1,4 +1,4 @@
-package br.com.mascenadev.vollmed.dto;
+package br.com.mascenadev.vollmed.dto.query;
 
 import java.time.LocalDateTime;
 

@@ -1,7 +1,7 @@
 package br.com.mascenadev.vollmed.entities;
 
-import br.com.mascenadev.vollmed.dto.RegisterPatientDTO;
-import br.com.mascenadev.vollmed.dto.UpdatePatientDTO;
+import br.com.mascenadev.vollmed.dto.patient.RegisterPatientDTO;
+import br.com.mascenadev.vollmed.dto.patient.UpdatePatientDTO;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;

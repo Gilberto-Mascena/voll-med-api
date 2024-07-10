@@ -1,4 +1,4 @@
-package br.com.mascenadev.vollmed.dto;
+package br.com.mascenadev.vollmed.dto.patient;
 
 import br.com.mascenadev.vollmed.entities.Patient;
 

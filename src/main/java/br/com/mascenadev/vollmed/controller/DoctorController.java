@@ -1,9 +1,9 @@
 package br.com.mascenadev.vollmed.controller;
 
-import br.com.mascenadev.vollmed.dto.DataDetailsDoctorsDTO;
-import br.com.mascenadev.vollmed.dto.RegisterDoctorsDTO;
-import br.com.mascenadev.vollmed.dto.UpdateDoctorsDTO;
-import br.com.mascenadev.vollmed.dto.ListDoctorsDTO;
+import br.com.mascenadev.vollmed.dto.doctor.DataDetailsDoctorsDTO;
+import br.com.mascenadev.vollmed.dto.doctor.RegisterDoctorsDTO;
+import br.com.mascenadev.vollmed.dto.doctor.UpdateDoctorsDTO;
+import br.com.mascenadev.vollmed.dto.doctor.ListDoctorsDTO;
 import br.com.mascenadev.vollmed.entities.Doctor;
 import br.com.mascenadev.vollmed.repository.DoctorRepository;
 import jakarta.annotation.Resource;

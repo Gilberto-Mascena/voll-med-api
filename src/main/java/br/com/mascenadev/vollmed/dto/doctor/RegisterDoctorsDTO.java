@@ -1,5 +1,6 @@
-package br.com.mascenadev.vollmed.dto;
+package br.com.mascenadev.vollmed.dto.doctor;
 
+import br.com.mascenadev.vollmed.dto.address.DataAddressDTO;
 import br.com.mascenadev.vollmed.entities.enums.Specialties;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;

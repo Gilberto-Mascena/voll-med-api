@@ -1,4 +1,4 @@
-package br.com.mascenadev.vollmed.dto;
+package br.com.mascenadev.vollmed.dto.query;
 
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotNull;
