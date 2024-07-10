@@ -19,6 +19,6 @@ public class QueryController {
     public ResponseEntity toSchedule(@RequestBody @Valid SchedulingConsultationDTO schedulingConsultation) {
 
         System.out.println("Scheduling consultation: " + schedulingConsultation);
-        return ResponseEntity.ok(new DetailingConsultationDTO(null, null, null, null)).build();
+        return ResponseEntity.ok(new DetailingConsultationDTO(null, null, null, null));
     }
 }
