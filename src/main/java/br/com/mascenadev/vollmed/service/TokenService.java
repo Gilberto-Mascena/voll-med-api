@@ -16,12 +16,14 @@ public class TokenService {
     @Value("${api.security.token.secret}") // @value is used to inject values from application.properties.
     private String secret;
 
+    private static final String ISSUER = "API voll.med";
+
     public String generateToken(User user) {
 
         try {
             var algorithm = Algorithm.HMAC256(secret);
             return JWT.create()
-                    .withIssuer("API voll.med")
+                    .withIssuer(ISSUER)
                     .withSubject(user.getLogin())
                     .withExpiresAt(expirationDate())
                     .sign(algorithm);
@@ -35,7 +37,7 @@ public class TokenService {
         try {
             var algorithm = Algorithm.HMAC256(secret);
             return JWT.require(algorithm)
-                    .withIssuer("API voll.med")
+                    .withIssuer(ISSUER)
                     .build()
                     .verify(tokenJWT)
                     .getSubject();
